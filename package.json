@@ -12,7 +12,7 @@
     "astro": "^5.5.2",
     "dotenv": "^16.4.7",
     "lodash": "^4.17.21",
-    "swiper": "^11.2.4",
+    "swiper": "^12.1.2",
     "utility-types": "^3.11.0"
   },
   "devDependencies": {
