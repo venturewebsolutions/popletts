@@ -5,10 +5,12 @@ interface Props {
   heading: string
   children: any
   price?: string
+  priceFootnote?: string
   prices?: string[][]
+  addOns?: string[]
 }
 
-const { heading, price, prices } = Astro.props
+const { heading, price, priceFootnote, prices, addOns = [] } = Astro.props
 ---
 
 <div class="info-card">
@@ -18,7 +20,14 @@ const { heading, price, prices } = Astro.props
     <slot />
   </p>
 
-  {price && <p class="info-card-price">{price}</p>}
+  {price && (
+    <div>
+      <p class="info-card-price">{price}</p>
+      {priceFootnote && (
+        <p class="info-card-price-footnote">{priceFootnote}</p>
+      )}
+    </div>
+  )}
 
   {
     prices && (
@@ -33,6 +42,11 @@ const { heading, price, prices } = Astro.props
             <p>
               <span>{price[0]}</span>
               <span class="info-card-prices-amount">{price[1]}</span>
+            </p>
+          ))}
+          {addOns.map(addOn => (
+            <p>
+              <span>{addOn}</span>
             </p>
           ))}
         </div>
@@ -61,6 +75,13 @@ const { heading, price, prices } = Astro.props
   .info-card-price {
     color: var(--colour-orange);
     font-weight: 700;
+  }
+
+  .info-card-price-footnote {
+    color: var(--colour-orange);
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.5;
   }
 
   .info-card-price-chevron {

@@ -173,6 +173,10 @@ import Section from '../components/Section.astro'
           ['Medium dog', '£35'],
           ['Large dog', '£40'],
         ]}
+        addOns={[
+          '+£5 to add deep ear cleaning',
+          '+£10 to add teeth cleaning',
+        ]}
       >
         We use only top-quality products, offering a wide range of shampoos
         tailored to every coat type. Our full grooming package includes a
@@ -187,6 +191,10 @@ import Section from '../components/Section.astro'
           ['Medium dog', '£20'],
           ['Large dog', '£25'],
         ]}
+        addOns={[
+          '+£5 to add deep ear cleaning',
+          '+£10 to add teeth cleaning',
+        ]}
       >
         We start with a gentle wash using dog-friendly shampoo, followed by a
         thorough blow-dry to leave the coat smooth, shiny, and healthy. This
@@ -194,11 +202,24 @@ import Section from '../components/Section.astro'
         grooming also includes a nail trim to ensure your pet's comfort.
       </InfoCard>
 
-      <InfoCard heading="Microchipping" price="£10 each">
-        Microchipping your pet is a fast, painless procedure that takes just
-        seconds and doesn't require anesthesia. This tiny device ensures your
-        pet can be easily identified and returned if lost. It's also a legal
-        requirement.
+      <InfoCard
+        heading="Bath, Blow-dry & Trim"
+        prices={[
+          ['Small dog', '£20'],
+          ['Medium dog', '£25'],
+          ['Large dog', '£30'],
+        ]}
+        addOns={[
+          '+£5 to add deep ear cleaning',
+          '+£10 to add teeth cleaning',
+        ]}
+      >
+        We begin with a gentle wash using premium, coat-specific shampoo, followed by a thorough blow-dry to leave the coat clean, soft, and shiny. This service includes a tidy trim to neaten the face, paws, and hygiene areas, along with a nail trim to keep your dog comfortable and well-groomed.
+      </InfoCard>
+
+      <InfoCard heading="Deep Ear Cleaning" price="£10*" priceFootnote="*only £5 when included with a full groom or a bath & blow-dry">
+        We gently remove built-up wax and debris using safe, vet-approved solutions to help prevent infection and
+        odors. Perfect for dogs prone to ear issues, this service keeps ears clean, healthy, and comfortable.
       </InfoCard>
 
       <InfoCard heading="Puppy groom" price="£25">
@@ -206,6 +227,10 @@ import Section from '../components/Section.astro'
         aged 12 to 17 weeks only. It includes a bath, brush & blow-dry, ear
         cleaning, a gentle trim, and an introduction to clippers, all finished
         with a treat.
+      </InfoCard>
+
+      <InfoCard heading="Teeth Cleaning" price="£20*" priceFootnote="*only £10 when included with any groom">
+        Our teeth cleaning service helps maintain your dog’s oral hygiene using safe, dog-friendly products. We gently remove surface buildup and freshen breath, helping to reduce plaque and support healthy gums. A quick and effective treatment to keep your pet’s smile clean and healthy.
       </InfoCard>
     </div>
 
