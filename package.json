@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.2",
+    "astro": "^6.0.8",
     "dotenv": "^16.4.7",
     "lodash": "^4.17.21",
     "swiper": "^12.1.2",
