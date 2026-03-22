@@ -31,8 +31,8 @@ jobs:
         with:
           node-version: 22
         env:
-          SITE: https://venturewebsolutions.github.io
-          BASE_URL: /popletts/
+          SITE: https://popletts.com
+          BASE_URL: /
 
   deploy:
     name: Deploy
