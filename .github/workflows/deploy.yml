@@ -32,7 +32,7 @@ jobs:
           node-version: 22
         env:
           SITE: https://venturewebsolutions.github.io
-          BASE_URL: /popletts-astro/
+          BASE_URL: /popletts/
 
   deploy:
     name: Deploy
