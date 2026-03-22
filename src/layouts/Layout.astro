@@ -30,6 +30,9 @@ const { title, description = SITE_DESCRIPTION, og } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title} - {SITE_TITLE}</title>
 
+    <!-- Sitemap -->
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
+
     <!-- Fonts -->
     <link
       rel="preload"
