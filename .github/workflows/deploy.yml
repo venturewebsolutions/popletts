@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 22
         env:
-          SITE: https://jlwalkerlg.github.io
+          SITE: https://venturewebsolutions.github.io
           BASE_URL: /popletts-astro/
 
   deploy:
